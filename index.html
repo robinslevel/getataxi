@@ -5,7 +5,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Taxipoint | Taxi in Nederland</title>
   <meta name="description" content="Taxipoint: Taxi in Nederland met vaste prijzen. Schiphol, stadsritten en lange afstanden. 24/7 beschikbaar. Bel of WhatsApp direct." />
-  <link rel="stylesheet" href="style/styles.css" />
+  <link rel="stylesheet" href="./style/styles.css">
+
 
 </head>
 
@@ -16,6 +17,8 @@
       <div class="topbar__left">
         <span class="pill" data-i18n="topbar_247">24/7</span>
         <span class="muted" data-i18n="topbar_tagline">Taxi in Nederland</span>
+        <button class="lang__btn" type="button" id="themeToggle">🌓</button>
+
       </div>
 
       <div class="topbar__right">
@@ -34,6 +37,10 @@
 
   <!-- Header -->
   <header class="header" id="top">
+    <button class="btn btn--ghost" id="themeToggle" aria-label="Toggle dark mode">
+  🌙
+</button>
+
     <div class="container header__inner">
       <a class="logo" href="#top" aria-label="Homepage">
         <span class="logo__mark">TP</span>

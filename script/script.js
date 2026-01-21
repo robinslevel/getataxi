@@ -341,3 +341,23 @@ if (bookingForm) {
     bookingForm.reset();
   });
 }
+
+
+function setTheme(theme) {
+  document.documentElement.setAttribute("data-theme", theme);
+  localStorage.setItem("taxipoint_theme", theme);
+}
+
+function toggleTheme() {
+  const current = document.documentElement.getAttribute("data-theme") || "light";
+  setTheme(current === "dark" ? "light" : "dark");
+}
+
+// Load saved theme or system preference
+const savedTheme = localStorage.getItem("taxipoint_theme");
+if (savedTheme) {
+  setTheme(savedTheme);
+} else {
+  const prefersDark = window.matchMedia && window.matchMedia("(prefers-color-scheme: dark)").matches;
+  setTheme(prefersDark ? "dark" : "light");
+}
