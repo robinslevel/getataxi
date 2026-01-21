@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Taxi naar Duitsland | Vaste prijzen & 24/7 service</title>
+  <meta name="description" content="Boek een taxi naar Duitsland met vaste prijzen. Comfortabele rit, 24/7 beschikbaar. Bel of WhatsApp direct." />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+  <!-- Top bar -->
+  <div class="topbar">
+    <div class="container topbar__inner">
+      <div class="topbar__left">
+        <span class="pill">24/7</span>
+        <span class="muted">Taxi naar Duitsland</span>
+      </div>
+      <div class="topbar__right">
+        <a class="link" href="tel:+31203586204" aria-label="Bel ons">📞 +31 20 358 6204</a>
+        <a class="link" href="mailto:info@jouwbedrijf.nl" aria-label="Email ons">✉️ info@jouwbedrijf.nl</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Header -->
+  <header class="header" id="top">
+    <div class="container header__inner">
+      <a class="logo" href="#top" aria-label="Homepage">
+        <span class="logo__mark">ADT</span>
+        <span class="logo__text">Taxi Services</span>
+      </a>
+
+      <nav class="nav" id="nav">
+        <a href="#service">Service</a>
+        <a href="#autos">Auto’s</a>
+        <a href="#prijzen">Tarieven</a>
+        <a href="#faq">FAQ</a>
+        <a href="#contact">Contact</a>
+      </nav>
+
+      <div class="header__actions">
+        <a class="btn btn--ghost" href="https://wa.me/31203586204" target="_blank" rel="noopener">WhatsApp</a>
+        <a class="btn btn--primary" href="#contact">Boek nu</a>
+        <button class="burger" id="burger" aria-label="Menu openen" aria-expanded="false">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Hero -->
+  <section class="hero">
+    <div class="container hero__grid">
+      <div class="hero__content">
+        <h1>Taxi naar Duitsland</h1>
+        <p class="lead">
+          Privé taxi van Nederland naar Duitsland met <strong>vaste prijzen</strong>, comfortabele auto’s en snelle booking via telefoon of WhatsApp.
+        </p>
+
+        <div class="hero__cta">
+          <a class="btn btn--primary" href="tel:+31203586204">Bel direct</a>
+          <a class="btn btn--secondary" href="https://wa.me/31203586204" target="_blank" rel="noopener">WhatsApp</a>
+          <a class="btn btn--ghost" href="#prijzen">Bekijk prijzen</a>
+        </div>
+
+        <ul class="hero__badges">
+          <li>✅ Vaste prijs</li>
+          <li>✅ 24/7 beschikbaar</li>
+          <li>✅ Deur-tot-deur</li>
+        </ul>
+      </div>
+
+      <div class="hero__media">
+        <!-- Replace with your image later -->
+        <div class="media-card" role="img" aria-label="Taxi afbeelding placeholder">
+          <p>Jouw hero afbeelding komt hier</p>
+          <small>Gebruik later: <code>images/hero.jpg</code></small>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Service -->
+  <section class="section" id="service">
+    <div class="container">
+      <div class="section__head">
+        <h2>Comfortabel naar Duitsland — zonder gedoe</h2>
+        <p class="muted">Door-to-door transport met professionele chauffeur. Ideaal voor zakelijke reizen, familiebezoek en luchthavenritten.</p>
+      </div>
+
+      <div class="cards">
+        <div class="card">
+          <h3>Vaste prijzen</h3>
+          <p>Geen verrassingen: transparant tarief vooraf. Inclusief brandstof en BTW.</p>
+        </div>
+        <div class="card">
+          <h3>24/7 beschikbaar</h3>
+          <p>Ook ’s nachts of vroeg in de ochtend. Jij kiest het vertrekmoment.</p>
+        </div>
+        <div class="card">
+          <h3>Privé rit</h3>
+          <p>Geen gedeelde ritten. Alleen jij (en je gezelschap) in de taxi.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Cars (2 only) -->
+  <section class="section section--alt" id="autos">
+    <div class="container">
+      <div class="section__head">
+        <h2>Onze beschikbare auto’s</h2>
+        <p class="muted">We rijden met twee opties. Kies wat het best past bij jouw groep en bagage.</p>
+      </div>
+
+      <div class="cards cards--2">
+        <article class="card car">
+          <div class="car__img">
+            <!-- Replace with your image later -->
+            <div class="img-placeholder">Foto auto 1</div>
+          </div>
+          <div class="car__body">
+            <h3>Sedan / Station</h3>
+            <ul class="list">
+              <li>Tot 4 passagiers</li>
+              <li>Ruimte voor bagage</li>
+              <li>Airco & comfortabele stoelen</li>
+            </ul>
+            <a class="btn btn--primary" href="#contact" data-car="Sedan / Station">Boek deze taxi</a>
+          </div>
+        </article>
+
+        <article class="card car">
+          <div class="car__img">
+            <!-- Replace with your image later -->
+            <div class="img-placeholder">Foto auto 2</div>
+          </div>
+          <div class="car__body">
+            <h3>Minivan / Taxi Bus</h3>
+            <ul class="list">
+              <li>Tot 7–8 passagiers</li>
+              <li>Extra bagageruimte</li>
+              <li>Ideaal voor gezinnen & groepen</li>
+            </ul>
+            <a class="btn btn--primary" href="#contact" data-car="Minivan / Taxi Bus">Boek deze taxi</a>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- Pricing -->
+  <section class="section" id="prijzen">
+    <div class="container">
+      <div class="section__head">
+        <h2>Vaste tarieven naar Duitsland</h2>
+        <p class="muted">Voorbeeldprijzen (pas later aan met jouw definitieve lijst).</p>
+      </div>
+
+      <div class="table-wrap" role="region" aria-label="Prijzentabel" tabindex="0">
+        <table class="table">
+          <thead>
+            <tr>
+              <th>Bestemming</th>
+              <th>Vanaf prijs</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr><td>Düsseldorf</td><td>€ XXX</td></tr>
+            <tr><td>Keulen</td><td>€ XXX</td></tr>
+            <tr><td>Frankfurt</td><td>€ XXX</td></tr>
+            <tr><td>Hamburg</td><td>€ XXX</td></tr>
+            <tr><td>Berlijn</td><td>€ XXX</td></tr>
+          </tbody>
+        </table>
+      </div>
+
+      <div class="note">
+        <strong>Tip:</strong> voeg later een regel toe: “Prijs is inclusief brandstof, tol en BTW.”
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section class="section section--alt" id="faq">
+    <div class="container">
+      <div class="section__head">
+        <h2>Veelgestelde vragen</h2>
+        <p class="muted">Korte antwoorden om twijfels weg te nemen.</p>
+      </div>
+
+      <div class="faq">
+        <details>
+          <summary>Hoe boek ik een taxi naar Duitsland?</summary>
+          <p>Je kunt bellen, WhatsAppen of het formulier invullen. We bevestigen je rit en vaste prijs.</p>
+        </details>
+        <details>
+          <summary>Zijn de prijzen echt vast?</summary>
+          <p>Ja, je krijgt vooraf een vaste prijs. Geen onverwachte kosten.</p>
+        </details>
+        <details>
+          <summary>Kan ik meerdere stops maken?</summary>
+          <p>Ja, dat kan. Geef dit door in het formulier of via WhatsApp.</p>
+        </details>
+        <details>
+          <summary>Hoeveel bagage mag ik meenemen?</summary>
+          <p>Dat hangt af van de gekozen auto. Geef je bagage aan bij het boeken.</p>
+        </details>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact / Booking -->
+  <section class="section" id="contact">
+    <div class="container">
+      <div class="section__head">
+        <h2>Boek je rit</h2>
+        <p class="muted">Vul het formulier in — of contacteer ons direct via telefoon/WhatsApp.</p>
+      </div>
+
+      <div class="contact-grid">
+        <form class="form" id="bookingForm">
+          <div class="form__row">
+            <label>Naam
+              <input type="text" name="name" placeholder="Jouw naam" required />
+            </label>
+            <label>Telefoon
+              <input type="tel" name="phone" placeholder="+31 ..." required />
+            </label>
+          </div>
+
+          <label>Ophaallocatie
+            <input type="text" name="pickup" placeholder="Bijv. Amsterdam, adres..." required />
+          </label>
+
+          <label>Bestemming (Duitsland)
+            <input type="text" name="destination" placeholder="Bijv. Düsseldorf..." required />
+          </label>
+
+          <div class="form__row">
+            <label>Datum
+              <input type="date" name="date" required />
+            </label>
+            <label>Tijd
+              <input type="time" name="time" required />
+            </label>
+          </div>
+
+          <label>Voorkeurs auto
+            <select name="car" id="carSelect">
+              <option value="">Kies een optie</option>
+              <option value="Sedan / Station">Sedan / Station</option>
+              <option value="Minivan / Taxi Bus">Minivan / Taxi Bus</option>
+            </select>
+          </label>
+
+          <label>Opmerkingen
+            <textarea name="notes" rows="4" placeholder="Stops, bagage, aantal personen..."></textarea>
+          </label>
+
+          <button class="btn btn--primary" type="submit">Verstuur aanvraag</button>
+          <p class="muted small">Dit formulier is een aanvraag. We nemen contact op om te bevestigen.</p>
+        </form>
+
+        <aside class="contact-card">
+          <h3>Direct contact</h3>
+          <p class="muted">Snel antwoord? Bel of WhatsApp.</p>
+          <div class="contact-actions">
+            <a class="btn btn--secondary" href="tel:+31203586204">📞 Bel</a>
+            <a class="btn btn--secondary" href="https://wa.me/31203586204" target="_blank" rel="noopener">💬 WhatsApp</a>
+          </div>
+
+          <div class="divider"></div>
+
+          <p class="small">
+            <strong>Email:</strong> info@jouwbedrijf.nl<br />
+            <strong>Regio:</strong> Nederland → Duitsland
+          </p>
+        </aside>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container footer__inner">
+      <div>
+        <div class="logo logo--footer">
+          <span class="logo__mark">ADT</span>
+          <span class="logo__text">Taxi Services</span>
+        </div>
+        <p class="muted small">© <span id="year"></span> ADT Taxi Services. Alle rechten voorbehouden.</p>
+      </div>
+
+      <div class="footer__links">
+        <a href="#top">Naar boven</a>
+        <a href="#">Privacy</a>
+        <a href="#">Algemene voorwaarden</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
