@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>404 - Pagina niet gevonden | Taxipoint</title>
+  <meta name="description" content="Deze pagina bestaat niet. Ga terug naar de homepage van Taxipoint." />
+  <meta name="robots" content="noindex, nofollow" />
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='20' fill='%232563eb'/><text x='50%25' y='50%25' font-size='50' font-weight='bold' text-anchor='middle' dominant-baseline='central' fill='white'>TP</text></svg>" />
+  <meta name="theme-color" content="#2563eb" />
+  <style>
+    :root {
+      --primary: #2563eb;
+      --bg: #f6f7fb;
+      --text: #0f172a;
+      --muted: #6b7280;
+    }
+    
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --bg: #0b1220;
+        --text: #e5e7eb;
+        --muted: #9ca3af;
+      }
+    }
+    
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    
+    body {
+      font-family: system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      padding: 20px;
+      text-align: center;
+    }
+    
+    .logo {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      margin-bottom: 40px;
+      text-decoration: none;
+      color: inherit;
+    }
+    
+    .logo__mark {
+      width: 48px;
+      height: 48px;
+      border-radius: 14px;
+      background: linear-gradient(135deg, var(--primary), #7c3aed);
+      color: white;
+      display: grid;
+      place-items: center;
+      font-weight: 800;
+      font-size: 18px;
+    }
+    
+    .logo__text {
+      font-weight: 800;
+      font-size: 24px;
+      letter-spacing: 0.2px;
+    }
+    
+    h1 {
+      font-size: 120px;
+      font-weight: 800;
+      line-height: 1;
+      margin-bottom: 16px;
+      background: linear-gradient(135deg, var(--primary), #7c3aed);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+    }
+    
+    h2 {
+      font-size: 24px;
+      margin-bottom: 12px;
+    }
+    
+    p {
+      color: var(--muted);
+      margin-bottom: 32px;
+      max-width: 400px;
+    }
+    
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      padding: 14px 28px;
+      border-radius: 12px;
+      font-weight: 700;
+      text-decoration: none;
+      background: var(--primary);
+      color: white;
+      transition: opacity 0.2s ease, transform 0.05s ease;
+    }
+    
+    .btn:hover { opacity: 0.9; }
+    .btn:active { transform: translateY(1px); }
+    
+    .links {
+      margin-top: 24px;
+      display: flex;
+      gap: 20px;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+    
+    .links a {
+      color: var(--muted);
+      text-decoration: none;
+      font-size: 14px;
+    }
+    
+    .links a:hover {
+      color: var(--text);
+    }
+  </style>
+</head>
+<body>
+  <a class="logo" href="index.html">
+    <span class="logo__mark">TP</span>
+    <span class="logo__text">Taxipoint</span>
+  </a>
+  
+  <h1>404</h1>
+  <h2>Pagina niet gevonden</h2>
+  <p>De pagina die je zoekt bestaat niet of is verplaatst. Geen zorgen, we brengen je graag naar de juiste bestemming.</p>
+  
+  <a class="btn" href="index.html">Terug naar home</a>
+  
+  <div class="links">
+    <a href="tel:+31203586204">📞 +31 20 358 6204</a>
+    <a href="https://wa.me/31203586204" target="_blank" rel="noopener">💬 WhatsApp</a>
+    <a href="mailto:info@taxipoint.nl">✉️ info@taxipoint.nl</a>
+  </div>
+</body>
+</html>

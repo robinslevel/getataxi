@@ -343,9 +343,17 @@ if (bookingForm) {
 }
 
 
+// Theme toggle functionality
 function setTheme(theme) {
   document.documentElement.setAttribute("data-theme", theme);
   localStorage.setItem("taxipoint_theme", theme);
+  
+  // Update button icon
+  const themeBtn = document.getElementById("themeToggle");
+  if (themeBtn) {
+    themeBtn.textContent = theme === "dark" ? "☀️" : "🌙";
+    themeBtn.setAttribute("aria-label", theme === "dark" ? "Switch to light mode" : "Switch to dark mode");
+  }
 }
 
 function toggleTheme() {
@@ -360,4 +368,19 @@ if (savedTheme) {
 } else {
   const prefersDark = window.matchMedia && window.matchMedia("(prefers-color-scheme: dark)").matches;
   setTheme(prefersDark ? "dark" : "light");
+}
+
+// Wire up theme toggle button
+const themeToggleBtn = document.getElementById("themeToggle");
+if (themeToggleBtn) {
+  themeToggleBtn.addEventListener("click", toggleTheme);
+}
+
+// Listen for system theme changes
+if (window.matchMedia) {
+  window.matchMedia("(prefers-color-scheme: dark)").addEventListener("change", (e) => {
+    if (!localStorage.getItem("taxipoint_theme")) {
+      setTheme(e.matches ? "dark" : "light");
+    }
+  });
 }
